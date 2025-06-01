@@ -1,7 +1,6 @@
 import { Request, Response } from 'express';
 import User from '../models/user.model';
 import { generateToken } from '../utils/jwt';
-import { wssSend } from '../socket/socket';
 
 export const login = async (req: Request, res: Response) => {
   try {
